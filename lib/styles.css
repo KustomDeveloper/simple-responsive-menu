@@ -2,7 +2,7 @@
 .simple-responsive-menu {
   width: 32px;
   height: 32px;
-  z-index: 9999;
+  z-index: 9999999999;
   cursor: pointer;
   position: absolute
 }
@@ -12,7 +12,7 @@
   top:0;
   background: #000;
   width: 100%;
-  z-index: 9999;
+  z-index: 9999999999;
   padding: 75px 15px 50px;
 }
 #simple-responsive-menu-box ul {
