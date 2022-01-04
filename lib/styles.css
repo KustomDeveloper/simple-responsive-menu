@@ -1,0 +1,41 @@
+
+.simple-responsive-menu {
+  width: 32px;
+  height: 32px;
+  z-index: 9999;
+  cursor: pointer;
+  position: absolute
+}
+#simple-responsive-menu-box {
+  display:none;
+  position: absolute; 
+  top:0;
+  background: #000;
+  width: 100%;
+  z-index: 9999;
+  padding: 75px 15px 50px;
+}
+#simple-responsive-menu-box ul {
+  margin: 0;
+  padding:0;
+}
+#simple-responsive-menu-box ul.sub-menu {
+  padding-left: 15px;
+}
+#simple-responsive-menu-box ul.sub-menu li a {
+  font-size: 14px;
+}
+#simple-responsive-menu-box li a {
+  font-size: 15px;
+  color: #4670c9;
+}
+.srm_show {
+  display: block !important;  
+}
+.hide-svg {
+  display: none !important;
+}
+.svg-close svg {
+  width: 32px;
+  height: 32px;
+}
