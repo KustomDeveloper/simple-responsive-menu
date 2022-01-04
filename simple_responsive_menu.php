@@ -125,8 +125,6 @@ function srm_hide_menu() {
   $srm_menu_top = get_option('srm_menu_top');
   // Menu side position
   $srm_menu_horizontal = get_option('srm_menu_horizontal');
-  //Add location
-  $add_nav_menu = wp_nav_menu(array( 'theme_location' => $menu, 'container_id' => 'simple-responsive-menu-box' )); 
 
   if( isset($srm_menu_top) && isset($srm_menu_horizontal) && isset($srm_menu_color) ) {
     echo '<style>.simple-responsive-menu {top:' .  $srm_menu_top .';' . $srm_menu_horizontal . ';}.simple-responsive-menu svg {fill:' . $srm_menu_color . ';}</style>';
@@ -145,6 +143,9 @@ add_action('wp_head', 'srm_hide_menu');
 function srm_mobile_menu() {
   //Get menu 
   $menu = get_option('srm_menu_name');
+
+  //Add location
+  $add_nav_menu = wp_nav_menu(array( 'theme_location' => $menu, 'container_id' => 'simple-responsive-menu-box' )); 
   
   //Get menu color
   $srm_menu_color = get_option('srm_menu_color');
