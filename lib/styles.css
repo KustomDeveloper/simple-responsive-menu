@@ -2,7 +2,7 @@
 .simple-responsive-menu {
   width: 32px;
   height: 32px;
-  z-index: 9999999999;
+  z-index: 99999999999;
   cursor: pointer;
   position: absolute
 }
